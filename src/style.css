@@ -90,6 +90,7 @@ nav .menuIcon {
 
 @media screen and (max-width: 992px) {
   .section-flex {
+    margin: 0 70px;
     display: block;
   }
   .section-flex .leftDiv .title-parg {
@@ -102,7 +103,7 @@ nav .menuIcon {
     margin-bottom: 30px;
   }
   .section-flex .rightDiv img {
-    width: 100%;
+    width: 60%;
   }
 }
 @media screen and (max-width: 576px) {
@@ -122,6 +123,35 @@ nav .menuIcon {
     width: 100%;
   }
 }
+.layer {
+  position: fixed;
+  background-color: rgba(245, 56, 84, 0.7333333333);
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  top: 0;
+}
+
+.cover {
+  position: fixed;
+  background-color: rgba(245, 56, 84, 0.9450980392);
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+.flexBox {
+  text-align: center;
+  padding: 50px 0;
+}
+.flexBox .close {
+  margin-left: 300px;
+}
+.flexBox div {
+  line-height: 70px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
