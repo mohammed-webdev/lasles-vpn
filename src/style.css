@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px 0;
+}
+nav img {
+  cursor: pointer;
+}
+nav > div a {
+  text-decoration: none;
+  -webkit-margin-start: 40px;
+          margin-inline-start: 40px;
+  cursor: pointer;
+  color: #4F5665;
+}
+nav .sign-in-out-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+nav .sign-in-out-btns .sign-in {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0B132A;
+  -webkit-margin-start: 30px;
+          margin-inline-start: 30px;
+  font-family: "Rubik", sans-serif;
+}
+nav .sign-in-out-btns .sign-up {
+  border: 1px solid #F53855;
+  border-radius: 50px;
+  width: 150px;
+  padding: 13px 0;
+  color: #F53855;
+  font-weight: 500;
+  transition: all 0.3s;
+  font-family: "Rubik", sans-serif;
+}
+nav .sign-in-out-btns .sign-up:hover {
+  box-shadow: 0 0 2px black;
+  background-color: #F53855;
+  color: white;
+}
+nav .menuIcon {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  nav > div {
+    display: none;
+  }
+  nav .sign-in {
+    display: none;
+  }
+  nav .sign-up {
+    display: none;
+  }
+  nav .menuIcon {
+    display: block;
+  }
+}
+.section-flex {
+  display: flex;
+  justify-content: center;
+  margin: 50px 170px;
+}
+.section-flex .leftDiv .title-parg {
+  color: #0B132A;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 70px;
+}
+.section-flex .leftDiv .title-parg span {
+  font-weight: bold;
+}
+.section-flex .leftDiv .light-parg {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  color: #4F5665;
+  margin-top: 20px;
+  line-height: 30px;
+}
+.section-flex .leftDiv .light-parg span {
+  font-weight: 800;
+}
+
+@media screen and (max-width: 992px) {
+  .section-flex {
+    display: block;
+  }
+  .section-flex .leftDiv .title-parg {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .section-flex .leftDiv .light-parg {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+  .section-flex .rightDiv img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section-flex {
+    margin: 0 70px;
+  }
+  .section-flex .leftDiv .title-parg {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .section-flex .leftDiv .light-parg {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 40px;
+  }
+  .section-flex .rightDiv img {
+    width: 100%;
+  }
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:40px 0;
+    img{
+        cursor: pointer;
+    }
+     > div {
+         a {
+             text-decoration: none;
+             margin-inline-start: 40px;
+             cursor: pointer;
+             color:#4F5665
+         }
+     }
+     .sign-in-out-btns{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+        .sign-in{
+            font-size: 16px;
+            font-weight: 500;
+            color: #0B132A;
+            margin-inline-start: 30px;
+            font-family: 'Rubik', sans-serif;
+        }
+        .sign-up{
+            border:1px solid #F53855;
+            border-radius: 50px;
+            width:150px;
+            padding:13px 0;
+            color:#F53855;
+            font-weight: 500;
+            transition: all 0.3s;
+            font-family: 'Rubik', sans-serif;
+        }
+        .sign-up:hover{
+            box-shadow: 0 0 2px black;
+            background-color: #F53855;
+            color:white;
+        }
+     }
+     .menuIcon{
+         display: none;
+     }
+}
+@media screen and (max-width:992px){
+    nav{
+        > div{
+            display: none;
+        }
+        .sign-in{
+             display: none;   
+        }
+        .sign-up{
+            display: none;
+        }
+        .menuIcon{
+            display: block;
+        }
+    }
+}
+
+ 
